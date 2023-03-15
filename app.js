@@ -11,7 +11,7 @@ let editedGMTmin
 if(minuteGmt<=4) {editedGMTmin = 0}
 if((minuteGmt%5)===0) {editedGMTmin = minuteGmt}
 if((minuteGmt%5) != 0){editedGMTmin=minuteGmt-(minuteGmt%5)}
-console.log(editedGMTmin);
 
-const timeSer = `${date.toUTCString().slice(-12,-10)}:${+editedGMTmin-5}:00`
+
+const timeSer = `${date.toUTCString().slice(-12,-10)}:${editedGMTmin}:00`
 console.log(timeSer);
